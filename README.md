@@ -1,7 +1,7 @@
 # 🔄 Stream8 Sync Server
 
 <p align="center">
-  <img src="https://stream8.poppi.cc/icons/icon-512.png" width="128" height="128" alt="Stream8 Sync Logo" />
+  <img src="https://github.com/rizzonicola/stream8/blob/main/public/icons/icon-512.png?raw=true" width="128" height="128" alt="Stream8 Sync Logo" />
 </p>
 
 **Stream8 Sync Server** is a lightweight, self-hosted backend service built to manage real-time watch history, playback progress, and configuration synchronization for the **Stream8** ecosystem.
