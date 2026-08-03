@@ -22,9 +22,9 @@
 
 ## 📸 Screenshots
 
-| Server Dashboard / Logs | Client Integration |
-| :---: | :---: |
-| ![Server Status](.github/screenshots/server-status.png) | ![Client Sync](.github/screenshots/client-sync.png) |
+<p align="center">
+  <img src=".github/screenshots/client-sync.png" alt="Stream8 Sync Settings" width="600" />
+</p>
 
 ---
 
