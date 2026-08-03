@@ -1,0 +1,25 @@
+# Cartelle di versione e IDE
+.git
+.gitignore
+.vscode
+.idea
+
+# Documentazione e file di orchestrazione non necessari alla build
+*.md
+docker-compose.yml
+
+# File di storage/database SQLite e dati locali
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Binari Go locali e file di build
+*.exe
+*.out
+stream8-sync
+bin/
+
+# File di sistema e log
+.DS_Store
+*.log

@@ -1,0 +1,16 @@
+services:
+  stream8-sync:
+    build: .
+    ports:
+      - "8080:8080" # Interfaccia web di amministrazione
+      - "8081:8081" # API usata dal sito Stream8
+    environment:
+      ADMIN_USER: cambiami
+      ADMIN_PASSWORD: cambiami-con-una-password-vera
+      DATA_DIR: /data
+    volumes:
+      - stream8-sync-data:/data
+    restart: unless-stopped
+
+volumes:
+  stream8-sync-data:
