@@ -43,7 +43,7 @@
    git clone [https://github.com/rizzonicola/stream8-sync.git](https://github.com/rizzonicola/stream8-sync.git)
    cd stream8-sync
 
-```
+
  2. **Start the container:**
    ```bash
    docker compose up -d
@@ -69,6 +69,3 @@ To pair this server with your frontend instance:
  3. Enter your server URL (e.g., https://your-sync-server.example.com or http://localhost:3000).
 ## 📄 License
 Distributed under the **GNU General Public License v3.0 (GPLv3)**. See LICENSE for more information.
-
-```
-Dimmi se vuoi sistemare qualcos'altro!
