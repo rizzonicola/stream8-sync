@@ -45,13 +45,6 @@ go build -o stream8-sync .
 ADMIN_USER=admin ADMIN_PASSWORD=change-me-to-a-real-password ./stream8-sync
 ```
 
-> **Note:** this environment could not reach `modernc.org` / the Go module
-> proxy to run a full `go build` while preparing this package (outbound
-> network restricted to a small domain allowlist). The code was verified
-> with `gofmt`/`go vet`-level syntax checks and careful manual review, but
-> you should run `go build ./...` (or `docker compose build`) once in your
-> own environment before deploying, as a first sanity check.
-
 ## Ports
 
 | Port | Purpose |
@@ -105,8 +98,3 @@ all permissively licensed:
 
 See `go.sum` for exact versions, and each module's own repository for the
 full license text.
-
-## License
-
-No license file is included yet — add one (e.g. MIT) before publishing
-publicly if you intend this to be reused by others.
