@@ -32,7 +32,7 @@
 
 ### Prerequisites
 
-* Docker & Docker Compose **OR** Node.js (v18 or higher)
+* Docker & Docker Compose **OR** Go (v1.22 or higher)
 
 ---
 
@@ -70,27 +70,31 @@ docker compose up -d
 If you prefer building the Docker image from source locally:
  1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/rizzonicola/stream8-sync.git](https://github.com/rizzonicola/stream8-sync.git)
-   cd stream8-sync
-   
+   git clone https://github.com/rizzonicola/stream8-sync.git
+   cd stream8-sync/stream8-sync-server
+
    ```
  2. **Start the container:**
    ```bash
    docker compose up -d --build
-   
+
    ```
-### Option 3: Manual Installation
- 1. **Clone and install dependencies:**
+### Option 3: Manual Installation (no Docker)
+ 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/rizzonicola/stream8-sync.git](https://github.com/rizzonicola/stream8-sync.git)
-   cd stream8-sync
-   npm install
-   
+   git clone https://github.com/rizzonicola/stream8-sync.git
+   cd stream8-sync/stream8-sync-server
+
    ```
- 2. **Start the server:**
+ 2. **Build the binary:**
    ```bash
-   npm start
-   
+   go build -o stream8-sync main.go
+
+   ```
+ 3. **Start the server:**
+   ```bash
+   ADMIN_USER=admin ADMIN_PASSWORD=change-me-to-a-real-password ./stream8-sync
+
    ```
 ## 🔗 Connecting with Stream8 Frontend
 To pair this server with your frontend instance:
